@@ -1,0 +1,91 @@
+{
+  "couriers": [
+    {
+      "id": 1,
+      "phone": "+79123456789",
+      "name": "Иван Курьеров",
+      "vehicle": "car",
+      "status": "active"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "address": "ул. Ленина, 15, кв. 42",
+      "client_name": "Анна Сидорова",
+      "client_phone": "+79123456780",
+      "status": "completed",
+      "courier_id": 1,
+      "notes": "Код домофона 42К#",
+      "sequence": 1,
+      "coordinates": {
+        "lat": 55.7558,
+        "lng": 37.6173
+      }
+    },
+    {
+      "id": 2,
+      "address": "пр. Мира, 28, офис 305",
+      "client_name": "Петр Иванов",
+      "client_phone": "+79123456781",
+      "status": "pending",
+      "courier_id": 1,
+      "notes": "Вход через бизнес-центр",
+      "sequence": 2,
+      "coordinates": {
+        "lat": 55.7604,
+        "lng": 37.6184
+      }
+    },
+    {
+      "id": 3,
+      "address": "ул. Садовая, 7, подъезд 2",
+      "client_name": "Мария Петрова",
+      "client_phone": "+79123456782",
+      "status": "pending",
+      "courier_id": 1,
+      "notes": "Звонок за 15 минут",
+      "sequence": 3,
+      "coordinates": {
+        "lat": 55.7649,
+        "lng": 37.6223
+      }
+    },
+    {
+      "id": 4,
+      "address": "ул. Центральная, 55, кв. 12",
+      "client_name": "Сергей Козлов",
+      "client_phone": "+79123456783",
+      "status": "pending",
+      "courier_id": 1,
+      "notes": "Оставить у консьержа",
+      "sequence": 4,
+      "coordinates": {
+        "lat": 55.7580,
+        "lng": 37.6150
+      }
+    },
+    {
+      "id": 5,
+      "address": "пр. Строителей, 33, офис 201",
+      "client_name": "Ольга Новикова",
+      "client_phone": "+79123456784",
+      "status": "pending",
+      "courier_id": 1,
+      "notes": "Документы - срочно!",
+      "sequence": 5,
+      "coordinates": {
+        "lat": 55.7512,
+        "lng": 37.6195
+      }
+    }
+  ],
+  "routes": [
+    {
+      "courier_id": 1,
+      "date": "2024-01-15",
+      "orders": [1, 2, 3, 4, 5],
+      "completed": [1]
+    }
+  ]
+}
